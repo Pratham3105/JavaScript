@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- how to create new element in DOM -->
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random()*10+1)
+    div.setAttribute('tittle','generated')
+    div.style.backgroundColor = 'aqua'
+    div.style.color = 'green'
+    div.style.border = "1px solid black"
+    // div.innerText = 'javascript'
+    const text = document.createTextNode('Pratham Tamrakar')
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+</script>
+</html>
